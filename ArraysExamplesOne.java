@@ -35,36 +35,36 @@ public class ArraysExamplesOne {
 		int pozitiveMasInt [] = new int [positive]; 
 	 
 		
-		for (int i:integers) {
-			if (i > 0) {
-				for (int j = 0; j < positive; j++) {
-				pozitiveMasInt[j] = i;
-				System.out.println(pozitiveMasInt[j]);
-				}
+		
+				
+		int j = 0;
+	for (int i = 0; i < integers.length; i++) {
+		//for (int j : integers) {
+			if (integers[i] > 0) {
+				
+				pozitiveMasInt [j] = integers[i];
+				// System.out.println(pozitiveMasInt [j]);
+			} else if (integers[i] < 0) {
+					negativeMasInt [j] = integers[i];
+				//	System.out.println(negativeMasInt [j]);
+					
+				
+				j ++;
 			}
-			else if (i <= 0) {
-				for (int j = 0; j < negative; j++) {
-					negativeMasInt[j] = i;
-					System.out.println(negativeMasInt[j]);
-					}
-			}	
-					
-		}
-							
-					
-		
-		
 			
-
+		//}
+	}
 	
+	System.out.println( "negative >> " );	
 				for (int i = 0; i < negative; i++) {
-					System.out.print( negativeMasInt[i] );
+					
+					System.out.println( negativeMasInt[i] );
 					
 				}
 				System.out.println("");
 		System.out.println( "pozitive >> " );		
 				for (int i = 0; i < positive; i++) {
-					System.out.print( pozitiveMasInt[i] );
+					System.out.println( pozitiveMasInt[i] );
 					
 				}
 				System.out.println("");
